@@ -36,7 +36,7 @@ async def echo(bot, update):
         )
         return
     await AddUser(bot, update)
-    imog = await update.reply_text("**جاري التحميل من فضلك أنتظر....⚡**", reply_to_message_id=update.id)
+    imog = await update.reply_text("**جاري الفحص....⚡**", reply_to_message_id=update.id)
     youtube_dl_username = None
     youtube_dl_password = None
     file_name = None
@@ -108,7 +108,7 @@ async def echo(bot, update):
     t_response = stdout.decode().strip()
     if e_response and "nonnumeric port" not in e_response:
         error_message = e_response.replace(Translation.TECH_VJ_ERROR_YTDLP, "")
-        if "الفيديو متاح للأعضاء المسجلين." in error_message:
+        if "This video is only available for registered users." in error_message:
             error_message = Translation.TECH_VJ_SET_CUSTOM_USERNAME_PASSWORD
         else:
             error_message = "العنوان خطأ 🚸</code>"
