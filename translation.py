@@ -27,7 +27,7 @@ class Translation(object):
 🌀 القناة : <a href="https://t.me/S_S0F">NETFLIX</a>
 
 
-👲 المطور : <a href="https://t.me/X_XF8">Tech VJ</a></b>
+👲 المطور : <a href="https://t.me/X_XF8">@X_XF8</a></b>
 
 """
 
